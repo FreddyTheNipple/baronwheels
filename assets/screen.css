@@ -118,13 +118,4 @@ a:hover {
     li {
         margin: 10px 0; /* Adjust margin to give space between stacked items */
     }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .logo {
-        width: 5em;
-        height: 5em;
-    }
 }
