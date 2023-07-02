@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 8em;
+    height: 8em;
+    margin: auto 0 auto 0.3em;
+}
+
+
+.promotie {
+    display: block;
+    width: 51%;
+    margin: auto;
+}
+
+@media (max-width: 1100px) {
+    header {
+        margin-bottom: 3em;
+    }
+
+    .promotie {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+header {
+    display: flex;
+    height: 8.5em;
+    display: flexbox;
+}
+
+h1 {
+    margin: auto 0.5em;
+    color: white;
+    font-size: 2.8em;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin: 0 10px;
+}
+
+/* Icons for email and GSM */
+li:nth-child(1)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007"; /* Person icon */
+    margin-right: 5px;
+}
+
+li:nth-child(2)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f095"; /* GSM icon */
+    margin-right: 5px;
+}
+
+li:nth-child(3)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0e0"; /* Email icon */
+    margin-right: 5px;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(https://use.fontawesome.com/releases/v5.15.3/webfonts/fa-solid-900.woff2) format("woff2");
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    ul {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text horizontally */
+    }
+
+    li {
+        margin: 10px 0; /* Adjust margin to give space between stacked items */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 5em;
+        height: 5em;
+    }
+}
